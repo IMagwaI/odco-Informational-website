@@ -1,0 +1,113 @@
+*
+{
+  margin : 0; 
+  padding :0;
+}
+body
+{
+  font-family: sans-serif;
+}
+#nav-bar
+{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar
+{
+  background-image: linear-gradient(to right, #688fca,#502686);
+  padding: 0 !important;
+}
+.navbar-brand img
+{
+  height: 85px;
+  padding-left: 30px;
+
+}
+.navbar-nav li
+{
+  padding:0 10px;
+}
+.navbar-nav li a
+{
+  color: #fff !important;
+  font-weight: 600;
+  float: right;
+  text-align: left;
+
+}
+.fa-bars
+{
+  color: #fff;
+  font-size: 45px !important;
+}
+.navbar-toggler
+{
+  outline: none !important;
+}
+
+/******** banner section*****************/
+#banner
+{
+  background-image:linear-gradient(to right, #688fca,#502686);
+  color: #fff;
+  padding-top: 5%;
+}
+.promo-title
+{
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+  text-align: right;
+}
+.subtitle
+{
+  text-align: right;
+}
+
+#banner a
+{
+  color: #fff;
+  font-size: large;
+}
+
+#banner a img
+{
+  height: 60px;
+  width: auto;
+
+}
+.wave-te7t
+{
+  width: 100%;
+}
+
+/********** section spoiler everybody :3**********/ 
+#خدمات 
+{
+  text-align: right;
+  padding: 80px 0;
+}
+.loi-btn
+{
+  height: 60px;
+  width: 60px;
+}
+.money-btn
+{
+  height: 60px;
+  width: 60px;
+}
+
+.qa-btn
+{
+  height: 60px;
+  width: 60px;
+}
+.playinchae-btn
+{
+  height: 60px;
+  width: 60px;
+}
+
+
