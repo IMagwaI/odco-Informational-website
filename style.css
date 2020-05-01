@@ -121,3 +121,77 @@ body
   width: 100%;
   height:auto;
 }
+.titre::before
+{
+   content:'';
+   background: #7b1798;
+   height: 5px;
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   transform: translateY(63px);
+}
+.titre::after
+{
+   content:'';
+   background: #7b1798;
+   height: 10px;
+   width: 50px;
+   margin-left: auto;
+   margin-bottom: 40px;
+   margin-right: auto;
+   display: block;
+   transform: translateY(8px);
+   
+}
+/********** section spoiler everybody :3**********/ 
+
+#section3
+{
+  background-image:linear-gradient(to right, #688fca,#502686);
+  color: #fff;
+  padding-top: 0%;
+}
+.wave2
+{
+  width: 100%;
+}
+.titrevid::before
+{
+   content:'';
+   background: #ddaceb;
+   height: 5px;
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   transform: translateY(63px);
+}
+.titrevid::after
+{
+   content:'';
+   background: #ddaceb;
+   height: 10px;
+   width: 50px;
+   margin-left: auto;
+   margin-bottom: 40px;
+   margin-right: auto;
+   display: block;
+   transform: translateY(8px);
+   
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
