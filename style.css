@@ -5,7 +5,7 @@
 }
 body
 {
-  font-family: 'Markazi Text', sans-serif;
+  font-family: sans-serif;
 }
 #nav-bar
 {
@@ -20,13 +20,13 @@ body
 }
 .navbar-brand img
 {
-  height: 85px;
-  padding-left: 30px;
+  height: auto;
+  padding-left: auto;
 
 }
 .navbar-nav li
 {
-  padding:0 10px;
+  padding:0 10;
 }
 .navbar-nav li a
 {
@@ -39,7 +39,7 @@ body
 .fa-bars
 {
   color: #fff;
-  font-size: 45px !important;
+  font-size: auto !important;
 }
 .navbar-toggler
 {
@@ -86,28 +86,36 @@ body
 #خدمات 
 {
   text-align: right;
-  padding: 80px 0;
+  padding: auto 0;
 }
 .loi-btn
 {
-  height: 60px;
-  width: 60px;
+  height: auto;
+  width: 15%;
 }
 .money-btn
 {
-  height: 60px;
-  width: 60px;
+  height: auto;
+  width: 15%;
 }
 
 .qa-btn
 {
-  height: 60px;
-  width: 60px;
+  height: auto;
+  width: 15%;
 }
 .playinchae-btn
 {
-  height: 60px;
-  width: 60px;
+  height: auto;
+  width: 15%;
 }
-
-
+.inchae-img
+{
+  width: 100%;
+  height:auto
+}
+.deja-img
+{
+  width: 100%;
+  height:auto
+}
