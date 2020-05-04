@@ -1,0 +1,239 @@
+<html dir="rtl" lang ="ar"> 
+        <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>مكتب تنمية التعاون-للإتصال بنا</title>
+        <link rel="stylesheet" href="style.scss">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <a class="navbar-brand" href="#"><img src="images/odco-vertical.png">  </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item ">
+                      <a class="nav-link" href="./index.html">الصفحة الرئيسية
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./khadamte.html">خدمات</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./video.html"> فيديوهاتنا 
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">أسئلة وأجوبة
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="milafate.html">ملفات للتحميل
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="./itissalbina.html">للإتصال بنا
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            
+            </section>
+        <!-------------  seciton  1 -->
+        <main data-router-wrapper>
+        <section data-router-view="home" id="itissalbina"> 
+        <div class="container text-center">
+            <div class ="row">
+                <div class="col-md-4 text-right" style="margin-top:20%;">
+                    <br></br>
+                    <div class="col-md-12 col-md-offset-3" align="center">
+                        <input id="name" placeholder="Name" class="form-control">
+                        <input id="email" placeholder="Email" class="form-control">
+                        <input id="subject" placeholder="Subject" class="form-control">
+                        <textarea class="form-control" id="body" placeholder="Email Body"></textarea>
+                        <input type="button" onclick="sendEmail()" value="Send An Email" class="btn btn-primary">
+                    </div>
+                </div>
+ 
+        
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script type="text/javascript">
+                function sendEmail() {
+                    var name = $("#name");
+                    var email = $("#email");
+                    var subject = $("#subject");
+                    var body = $("#body");
+        
+                    if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+                        $.ajax({
+                           url: 'sendEmail.php',
+                           method: 'POST',
+                           dataType: 'json',
+                           data: {
+                               name: name.val(),
+                               email: email.val(),
+                               subject: subject.val(),
+                               body: body.val()
+                           }, success: function (response) {
+                                if (response.status == "success")
+                                    alert('Email Has Been Sent!');
+                                else {
+                                    alert('Please Try Again!');
+                                    console.log(response);
+                                }
+                           }
+                        });
+                    }
+                }
+        
+                function isNotEmpty(caller) {
+                    if (caller.val() == "") {
+                        caller.css('border', '1px solid red');
+                        return false;
+                    } else
+                        caller.css('border', '');
+        
+                    return true;
+                }
+            </script>
+        
+        
+        
+        
+        
+        
+
+
+
+        
+    
+                <div class="col-md-4 text-center">
+                    <p class="promo-title">تواصلوا معنا</p>
+                    <p class="text-region">الإدارة المركزية</p>
+                    <p class="text">العنوان: 13 زنقة ضاية عوة أكدال ص.ب 1297 الرباط</p>
+                    <p class="text">الهاتف :0537771033 </p>
+                    <p class="text">البريد الإلكتروني: odco@odco.gov.ma </p>
+
+
+                
+            
+            
+            
+            
+                </div>
+
+            <div class="col-md-4">
+                <p class="promo-title"> المندوبية الجهوية</p>
+                <table>
+                    <tr>
+                        <th>مقر المندوبية الجهوية</th>
+                        <th>هاتف/فاكس</th>
+                        <th>العنوان</th>
+
+                    </tr>
+                    <tr>
+                        <td>أكادير</td>
+                        <td>05.28.23.33.97</td>
+                        <td>شارع الحسن الأول عمارة أمل سوس ص.ب532</td>
+
+                    </tr>
+                    <tr>
+                        <td>الحسيمة</td>
+                        <td>05.39.84.14.75</td>
+                        <td>شارع الأندلس ص.ب3259</td>
+
+                    </tr>
+                    <tr>
+                        <td>بني ملال</td>
+                        <td>05.23.42.04.31</td>
+                        <td>شارع شابي ولاد حمدان ص.ب 60 1750</td>
+
+                    </tr>
+                    <tr>
+                        <td>فاس</td>
+                        <td>05.35.65.43.62</td>
+                        <td>شارع الزرقطوني فاس الأطلس ص.ب 60 2039</td>
+
+                    </tr>
+                    <tr>
+                        <td>كلميم</td>
+                        <td>05.28.87.30.38</td>
+                        <td>حي القدس رقم 840 ص.ب 415</td>
+
+                    </tr>
+                    <tr>
+                        <td>القنيطرة</td>
+                        <td>05.37.37.56.31</td>
+                        <td>ملتقى شارع محمد الديوري و زنقة اليرموك عمارة S رقم 9 ص.ب 249</td>
+                    </tr>
+                    <tr>
+                        <td>العيون</td>
+                        <td>05.28.89.29.48</td>
+                        <td>تجزئة مولاي رشيد طريق السمارة ص.ب 493</td>
+
+                    </tr>
+                    <tr>
+                        <td>مراكش</td>
+                        <td>05.24.43.77.88</td>
+                        <td>شارع يوغوسلافيا رقم 82 عمارة ملاك ص.ب 602209</td>
+
+                    </tr>
+                    <tr>
+                        <td>مكناس</td>
+                        <td>05.35.51.49.80</td>
+                        <td>زنقة أنتسربي طابق 1 رقم 1 ص.ب 6332</td>
+
+                    </tr>
+                    <tr>
+                        <td>وجدة</td>
+                        <td>05.36.68.28.33</td>
+                        <td>شارع محمد الخامس عمارة البرصة طابق 3 رقم 5 ص.ب 49</td>
+
+                    </tr>
+                    <tr>
+                        <td>اسفي</td>
+                        <td>05.24.62.10.95</td>
+                        <td>تجزئة بوزوبع شارع إبن زيدون طابق 3 رقم 6 المدينة الجديدة ص.ب 366</td>
+                    </tr>
+                    <tr>
+                        <td>سطات</td>
+                        <td>05.23.40.51.45</td>
+                        <td>شارع الحسن التاني عمارة 20 طابق 2 رقم 6 ص.ب 813</td>
+                    </tr>
+                    <tr>
+                        <td>طنجة</td>
+                        <td>05.39.94.67.85</td>
+                        <td>شارع يوسف بن تاشفين عمارة الفرايجي ص.ب 1134</td>
+                    </tr>
+                    <tr>
+                        <td>الداخلة</td>
+                        <td>05.28.93.29.83</td>
+                        <td>2 عمارة الخير الطابق التاني حي مولاي رشيد</td>
+                    </tr>
+                    <tr>
+                        <td>الدارالبيضاء</td>
+                        <td>05.22.30.44.36</td>
+                        <td>رقم 45 زنقة الحباشة الطابق الثاني ص.ب 1066</td>
+                    </tr>
+                    
+                </table>
+            
+            </div>  
+        </div>
+        </div>
+
+        </section>
+        
+        </main>
+        
+
+        <script src ="js/index.js"></script>
+        </body>
+        </html>

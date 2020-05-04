@@ -1,10 +1,10 @@
 <!----------- <html dir="rtl" lang ="ar"> ---->
-<html>    
+<html dir="rtl" lang ="ar"> 
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width , initial-scale=1.0">
-<title> odco here</title>
-<link rel="stylesheet" href="style.css">
+<title> مكتب تنمية التعاون-الصفحة الرئيسية</title>
+<link rel="stylesheet" href="style.scss">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
@@ -13,7 +13,7 @@
 
 <body>
 <section id ="nav-bar">
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
         <a class="navbar-brand" href="#"><img src="images/odco-vertical.png">  </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -21,14 +21,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto" >
             <li class="nav-item ">
-              <a class="nav-link" href="#">الصفحة الرئيسية
+              <a class="nav-link" href="./index.html">الصفحة الرئيسية
             </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">خدمات</a>
+              <a class="nav-link" href="./khadamte.html">خدمات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> فيديوهاتنا 
+              <a class="nav-link" href="./video.html"> فيديوهاتنا 
             </a>
             </li>
             <li class="nav-item">
@@ -36,7 +36,11 @@
             </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link " href="#">اتصل بنا
+              <a class="nav-link " href="./milafate.html">ملفات للتحميل
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="./itissalbina.html">للإتصال بنا
             </a>
             </li>
           </ul>
@@ -46,76 +50,30 @@
 </section>
 
 <!-------------  seciton  1 -->
-<section id="banner">
+<main data-router-wrapper>
+<section data-router-view="home" id="banner">
 <div class="container">
 <div class="row">
-<div class="col-md-6">
-    <p class="promo-title">مرحبا بكم في موقع مكتب التنمية التعاونية </p>
-    <p class="subtitle"> ستجد في هذا الموقع جميع المعلومات والأدلة المتعلقة بالتعاونيات</p>
-    <a href="#"><img src="images/play.png" class="play-btn"> شاهد فيديوهاتنا </a> 
 
-</div>  
 <div class="col-md-6 text-center">
     <img src="images/intro-odco-banner.png" class="img-fluid">
 
 </div>
+<div class="col-md-6">
+  <p class="promo-title"> مرحبا بك في دليل التعاونيات!</p>
+  <br></br>
+  <p class="subtitle"> مكتب تنمية التعاون يستضيفكم بهذا الفضاء للتعريف باجراءات تاسيس التعاونية و مساعدة التعاونيات في المجال القانوني و الادارة و التسيير</p>
+  <a href="#" class="play-btn"><img src="images/play.png"> شاهد فيديوهاتنا </a> 
+
+</div>  
 </div>
 </div>
 <img src="images/wave1.png" class="wave-te7t">
-</section>
-
-<!-------------  seciton  2 -->
-<section id = "خدمات">
-<div class ="container text-center">
-  <h1 class="titre">خدماتنا</h1>
-<div class ="row">
-<div class ="col-md-6">
-<img src="images/inchaeta3.png" class="inchae-img">
-<h4> أريد إنشاء تعاونية</h4>
-<br></br>
-<a href="#"><img src="images/playinchae-.png" class="playinchae-btn"> فيديو توضيحية حول عملية الإنشاء-</a> 
-<br></br>
-
-<a href="#"><img src="images/qa.png" class="qa-btn"> .جميع معلومات حول انشاء التعاونيات في القسم اسئلة واجوبة-</a> 
-</div>
-<div class ="col-md-6">
-    <img src="images/dejata3awonia.png" class="deja-img">
-    <br></br>
-    <h4> لدي تعاونية </h4>
-<br></br>
-<a href="#"><img src="images/loi.png" class="loi-btn"> القانون 112.12-</a> 
-<br></br>
-<a href="#"><img src="images/money-icon.png" class="money-btn"> الهيئات الداعمة-</a> 
-
-    </div>
-
-
-
-
-</div>
-</div>
-
-
-
-
-
 
 </section>
+</main>
 
-<!-------------------------------------------  seciton  3 ----------------------------------------------- -->
+  <script src ="js/index.js"></script>
 
-
-<section id="section3">
-  <img src="images/wave2.png" class="wave2">
-  <div class ="container text-center">
-    <h1 class="titrevid">فيديوهاتنا</h1>
-  <div class ="row">
-  <div class ="col-md-12">
-    <div class="iframe-container">
-      <iframe width="853" height="480" src="https://www.youtube.com/embed/JaRupj8433E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
- 
-  </section>
- 
 </body>
 </html>

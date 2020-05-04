@@ -1,0 +1,90 @@
+<html dir="rtl" lang ="ar"> 
+ 
+        <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>مكتب تنمية التعاون-للإتصال بن فيديوهاتنا </title>
+        <link rel="stylesheet" href="style.scss">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <a class="navbar-brand" href="#"><img src="images/odco-vertical.png">  </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item ">
+                      <a class="nav-link" href="./index.html">الصفحة الرئيسية
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./khadamte.html">خدمات</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./video.html"> فيديوهاتنا 
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">أسئلة وأجوبة
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="milafate.html">ملفات للتحميل
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="./itissalbina.html">للإتصال بنا
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            
+      <!-------------  seciton  1 -->
+        <main data-router-wrapper>
+        <section data-router-view="home" id="videos"> 
+        <div class="container text-center">
+            <div class ="row">
+                <div class="col-md-12 ">
+
+                    <h1>فيديوهاتنا  </h1>
+                    <video class="videowate" id="slider" autoplay muted loop>
+                        <source src="./video/1.mp4" type="video/mp4">
+
+
+                    </video>
+                    <ul class="navigation">
+                        <li onclick='videoUrl("./video/2.mp4")'><img src="/images/mafhumta3aw.png" ></li>
+                        <li onclick='videoUrl("./video/3.mp4")'><img src="/images/mola2ama.png" ></li>
+                        <li onclick='videoUrl("./video/4.mp4")'><img src="/images/tassyireta3aw.png" ></li>
+                        <li onclick='videoUrl("./video/5.mp4")'><img src="/images/tandimdakhili.png"></li>
+                        <li onclick='videoUrl("./video/1.mp4")'><img src="images/qanone.png"></li>
+
+                    </ul>
+
+
+
+
+                    </div>
+                    </div>
+                    </div>
+                    
+        </section>
+        <script type="text/javascript">
+        function videoUrl(blabla){
+            document.getElementById("slider").src=blabla;
+        }
+        
+        </script>
+        </main>
+        
+
+        <script src ="js/index.js"></script>
+        </body>
+        </html>
